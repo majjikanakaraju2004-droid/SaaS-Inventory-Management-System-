@@ -90,17 +90,16 @@ WSGI_APPLICATION = 'stockflow.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ['stockflow'],
-        'USER': os.environ['root'],
-        'PASSWORD': os.environ['root'],
-        'HOST': os.environ['127.0.0.1'],
-        'PORT': os.environ.get('DB_PORT', '3306'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT', '3306'),
         'OPTIONS': {
             'charset': 'utf8mb4',
-        }
+        },
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
