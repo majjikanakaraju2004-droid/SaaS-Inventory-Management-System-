@@ -1,8 +1,12 @@
 // StockFlow API client utility
 
-export const API_BASE_URL = window.location.hostname === '127.0.0.1'
-  ? 'http://127.0.0.1:8000'
-  : 'http://localhost:8000';
+const isLocal =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
+export const API_BASE_URL = isLocal
+  ? "http://127.0.0.1:8000"
+  : "https://saas-inventory-management-system-wn2o.onrender.com";
 
 export async function apiRequest(endpoint, options = {}) {
   const url = endpoint.startsWith('http') ? endpoint : `${API_BASE_URL}${endpoint}`;
