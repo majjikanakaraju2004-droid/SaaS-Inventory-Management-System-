@@ -1,0 +1,64 @@
+/* StockFlow Component Level Styles */
+
+.dashboard-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 28px;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(34, 211, 238, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 45px rgba(8, 11, 17, 0.25);
+}
+
+.dashboard-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-badge {
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #c4b5fd;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dashboard-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 22px;
+  background: rgba(8, 11, 17, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-hero-logo {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .dashboard-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-hero-visual {
+    width: 100%;
+  }
+
+  .dashboard-hero-logo {
+    width: 96px;
+    height: 96px;
+  }
+}

@@ -1,0 +1,40 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="120" cy="120" r="120" fill="#080B11"/>
+  
+  <!-- Main container boxes (inventory boxes) -->
+  <g opacity="0.9">
+    <!-- Top left box -->
+    <rect x="50" y="50" width="50" height="50" rx="8" fill="none" stroke="url(#sfGradient)" stroke-width="2.5"/>
+    <circle cx="75" cy="75" r="8" fill="url(#sfGradient)"/>
+    
+    <!-- Top right box -->
+    <rect x="140" y="50" width="50" height="50" rx="8" fill="none" stroke="url(#sfGradient)" stroke-width="2.5" opacity="0.7"/>
+    <circle cx="165" cy="75" r="6" fill="url(#sfGradient)" opacity="0.7"/>
+    
+    <!-- Bottom left box -->
+    <rect x="50" y="140" width="50" height="50" rx="8" fill="none" stroke="url(#sfGradient)" stroke-width="2.5" opacity="0.6"/>
+    <circle cx="75" cy="165" r="5" fill="url(#sfGradient)" opacity="0.6"/>
+    
+    <!-- Bottom right box (full) -->
+    <rect x="140" y="140" width="50" height="50" rx="8" fill="url(#sfGradient)" opacity="0.15" stroke="url(#sfGradient)" stroke-width="2.5"/>
+    <circle cx="165" cy="165" r="10" fill="url(#sfGradient)"/>
+  </g>
+  
+  <!-- Center connecting lines (flow) -->
+  <line x1="100" y1="120" x2="140" y2="120" stroke="url(#sfGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="120" y1="100" x2="120" y2="140" stroke="url(#sfGradient)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Corner accents -->
+  <circle cx="30" cy="30" r="2.5" fill="url(#sfGradient)"/>
+  <circle cx="210" cy="30" r="2.5" fill="url(#sfGradient)"/>
+  <circle cx="30" cy="210" r="2.5" fill="url(#sfGradient)"/>
+  <circle cx="210" cy="210" r="2.5" fill="url(#sfGradient)"/>
+</svg>
