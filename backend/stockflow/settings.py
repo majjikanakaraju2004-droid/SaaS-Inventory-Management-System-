@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'stockflow.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('DB_NAME', 'stockflow'),
-        'USER': os.environ.get('DB_USER', 'root'),
-        'PASSWORD': os.environ.get('DB_PASSWORD', ''),
-        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
+        'NAME': os.environ['stockflow'],
+        'USER': os.environ['root'],
+        'PASSWORD': os.environ['root'],
+        'HOST': os.environ['127.0.0.1'],
         'PORT': os.environ.get('DB_PORT', '3306'),
         'OPTIONS': {
             'charset': 'utf8mb4',
